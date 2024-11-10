@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.hero p {
+    font-size: 24px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+.hero .btn-primary {
+    padding: 10px 30px;
+    background-color: #1e90ff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+.about, .skills, .projects, .contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills .skills-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.skill {
+    width: 30%;
+    text-align: center;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 2s ease;
+}
+
+.html { width: 90%; background-color: #f44336; }
+.css { width: 80%; background-color: #4CAF50; }
+.js { width: 75%; background-color: #2196F3; }
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 40%;
+    height: auto;
+}
+
+.project-info {
+    width: 55%;
+    padding: 10px 20px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

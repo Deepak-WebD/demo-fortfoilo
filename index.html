@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Kumar Sahni - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Deepak Kumar </a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Deepak Kumar </h1>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#about" class="btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-text" data-aos="fade-up">
+                <p>I'm a passionate web developer who loves to create beautiful and functional websites. I specialize in front-end development, web design, and building interactive web experiences.</p>
+                <p>With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Vue.js, I strive to keep up with the latest trends in web development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <div class="skill" data-aos="zoom-in-up">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="zoom-in-up" data-aos-delay="200">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress js"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-card" data-aos="fade-up">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>A web-based project I built using React and Node.js.</p>
+                    <a href="#" class="btn-secondary">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="btn-secondary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Deepak Kumar Sahani | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
